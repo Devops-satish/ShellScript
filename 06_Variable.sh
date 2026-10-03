@@ -1,0 +1,15 @@
+#!/bin/bash
+
+START_TIME=$(date %s)
+
+echo "start time is:: $START_TIME"
+
+sleep 10
+
+END_TIME=$(date %s)
+
+echo "End time Is:: $END_TIME"
+
+TOTAL_TIME=$(($END_TIME-$START_TIME))
+
+echo "Total time is ::$TOTAL_TIME"
