@@ -6,4 +6,4 @@ Blue='\033[0;34m' #Blue
 White='\033[0;37m' #white
 Green='\033[0;32m' #Green
 
-echo -e "$RED Red colour inititated $N, $Green Green colour Started $n"
+echo -e "$Red Red colour inititated $N, $Green Green colour Started $n"
