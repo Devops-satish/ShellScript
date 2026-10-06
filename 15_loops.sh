@@ -25,7 +25,7 @@ VALIDATE() {
 for app in $@ # sudo sh 14_loops.sh nginx mysql nodejs
 do 
    dnf list installed $app &>>$LOGS_FILE
-   if [ $? -ne 0]; then
+   if [ $? -ne 0 ]; then
       echo "$app software not installed...installing now"
       dnf install $app -y &>>$LOGS_FILE
       VALIDATE $? "$app Installation"
