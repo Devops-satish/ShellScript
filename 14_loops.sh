@@ -22,7 +22,7 @@ VALIDATE() {
 
 }
 
-for $app in $@ # sudo sh 14_loops.sh nginx mysql nodejs
+for app in $@ # sudo sh 14_loops.sh nginx mysql nodejs
 do 
   dnf install $app -y &>>$LOGS_FILE
   VALIDATE $? "$app Installation"
